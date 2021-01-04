@@ -6,7 +6,7 @@ import java.net.Proxy;
 import java.net.Socket;
 
 /**
- * @description:
+ * @description:  socket代理
  * @author: 金研
  * @date: 2021/1/2
  */
