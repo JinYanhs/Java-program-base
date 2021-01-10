@@ -1,4 +1,4 @@
-package com.glod.socket.networkProgramming.chapter2.chapter3;
+package com.glod.socket.networkProgramming.chapter3;
 
 import java.net.Socket;
 
@@ -11,7 +11,7 @@ public class Client {
     public static void main(String[] args) throws Exception{
         final int length = 100;
         String host = "localhost";
-        int port = 8000;
+        int port = 8001;
 
         Socket[] sockets = new Socket[length];
         //试图建立100次连接

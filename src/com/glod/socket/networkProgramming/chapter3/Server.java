@@ -1,4 +1,4 @@
-package com.glod.socket.networkProgramming.chapter2.chapter3;
+package com.glod.socket.networkProgramming.chapter3;
 
 import java.io.IOException;
 import java.net.ServerSocket;
