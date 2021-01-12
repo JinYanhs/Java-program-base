@@ -7,7 +7,7 @@ import java.net.Socket;
 
 /**
  * @description:  socket代理
- * @author: 金研
+ * @author: Glod
  * @date: 2021/1/2
  */
 public class ProxyTest<socket> {

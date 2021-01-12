@@ -14,7 +14,7 @@ import java.util.concurrent.Future;
 
 /**
  * @description: 读取IP地址，判断每个IP地址是否为垃圾邮件地址的任务交给线程池来处理。任务执行的结果被存放在一个Futeure对象中
- * @author: 金研
+ * @author: Glod
  * @date: 2021/1/10
  */
 public class SpamCheck {

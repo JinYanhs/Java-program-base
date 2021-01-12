@@ -6,7 +6,7 @@ import java.net.Socket;
 
 /**
  * @description: 单线程服务器采用的通信流程
- * @author: 金研
+ * @author: Glod
  * @date: 2021/1/5
  */
 public class SingleThreadServer {

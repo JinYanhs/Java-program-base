@@ -6,7 +6,7 @@ import java.util.concurrent.Callable;
 
 /**
  * @description: 负责到DNS服务器中查找特定的地址，判断他是否为垃圾邮件发送者的地址 Feature接口能够保存异步运算结果
- * @author: 金研
+ * @author: Glod
  * @date: 2021/1/10
  */
 public class LookupTask implements Callable<String> {

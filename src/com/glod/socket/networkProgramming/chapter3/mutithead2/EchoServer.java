@@ -8,7 +8,7 @@ import java.util.concurrent.Executors;
 
 /**
  * @description: JDK原生线程池来创建与客户端Socket交互
- * @author: 金研
+ * @author: Glod
  * @date: 2021/1/10
  */
 public class EchoServer {

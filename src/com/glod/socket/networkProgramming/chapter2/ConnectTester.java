@@ -5,7 +5,7 @@ import java.net.*;
 
 /**
  * @description: 接收用户从命令行输入的主机名和端口，然后连接到该地址，如果连接成功，就会计算建立连接的时间；如果链接失败，就会捕获各种异常。
- * @author: 金研
+ * @author: Glod
  * @date: 2021/1/2
  */
 public class ConnectTester {

@@ -5,7 +5,7 @@ import java.net.UnknownHostException;
 
 /**
  * @description: SpamCheck判断特定IP地址是否为垃圾邮件发送者的IP
- * @author: 金研
+ * @author: Glod
  * @date: 2021/1/2
  */
 public class SpamCheck {

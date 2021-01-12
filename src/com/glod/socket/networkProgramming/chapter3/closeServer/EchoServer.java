@@ -16,7 +16,7 @@ import java.util.concurrent.TimeUnit;
 
 /**
  * @description: 此服务器可以关闭自身，而不依靠操作系统强行终止.
- * @author: 金研
+ * @author: Glod
  * @date: 2021/1/11
  */
 public class EchoServer {

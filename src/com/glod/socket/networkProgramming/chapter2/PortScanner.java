@@ -9,7 +9,7 @@ import java.net.UnknownHostException;
 
 /**
  * @description: PortScanner类可以扫描主机上从 1 到 1024之间的端口，判断这些端口是否已经被服务器程序监听。
- * @author: 金研
+ * @author: Glod
  * @date: 2021/1/2
  */
 public class PortScanner {

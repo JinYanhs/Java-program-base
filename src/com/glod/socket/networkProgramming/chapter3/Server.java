@@ -6,7 +6,7 @@ import java.net.Socket;
 
 /**
  * @description: 服务器端进程
- * @author: 金研
+ * @author: Glod
  * @date: 2021/1/4
  */
 public class Server {

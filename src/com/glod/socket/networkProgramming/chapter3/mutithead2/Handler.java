@@ -8,7 +8,7 @@ import java.net.Socket;
 
 /**
  * @description: 处理连接类
- * @author: 金研
+ * @author: Glod
  * @date: 2021/1/10
  */
 public class Handler implements Runnable {

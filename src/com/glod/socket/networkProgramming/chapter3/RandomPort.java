@@ -7,7 +7,7 @@ import java.net.ServerSocket;
 
 /**
  * @description: 端口扫描&匿名端口
- * @author: 金研
+ * @author: Glod
  * @date: 2021/1/5
  */
 public class RandomPort {

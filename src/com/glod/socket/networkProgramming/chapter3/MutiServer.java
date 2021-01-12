@@ -2,7 +2,7 @@ package com.glod.socket.networkProgramming.chapter3;
 
 /**
  * @description: 并发SocketServer
- * @author: 金研
+ * @author: Glod
  * @date: 2021/1/5
  */
 public class MutiServer {
@@ -10,7 +10,7 @@ public class MutiServer {
      *  可以用并发性能来衡量一个服务器同时响应多个客户端的能力。
      *  好的并发性能的服务器，符合以下两个条件
      *  1.能同时接收并处理多个客户连接
-     *  2.对于每隔客户，都会迅速给与响应
+     *  2.对于每个客户，都会迅速给与响应
      *  sum:服务器同时处理的客户连接数目越多，并且对每个客户做出响应的速度越快，就表明其并发性能越高
      */
 

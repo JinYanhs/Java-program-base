@@ -4,7 +4,7 @@ import java.net.Socket;
 
 /**
  * @description: 客户端进程
- * @author: 金研
+ * @author: Glod
  * @date: 2021/1/4
  */
 public class Client {

@@ -10,7 +10,7 @@ import java.nio.Buffer;
 
 /**
  * @description: 接收数据的服务器程序，每隔 1s 接收一行字符串，共20行
- * @author: 金研
+ * @author: Glod
  * @date: 2021/1/3
  */
 public class Receiver {

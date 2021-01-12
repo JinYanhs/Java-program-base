@@ -7,7 +7,7 @@ import java.net.Socket;
 
 /**
  * @description: 发送数据的客户程序，每隔500ms发送一行字符串，共发送20行
- * @author: 金研
+ * @author: Glod
  * @date: 2021/1/3
  */
 public class Sender {
