@@ -1,7 +1,7 @@
 # Java-program-base
 Note my Java networkProgramming
 ---------------------------------------
-加强自己的Java基础、一些框架和中间件
+加强自己的Java基础、一些框架和中间件，
 不能让时间跑掉了，肝！
 
 # content
