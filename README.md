@@ -7,7 +7,7 @@ Note my Java networkProgramming
 # content
 包含Java基础（集合、多线程、IO、网络编程），而不限于这些。
 
-具体如下
+# 具体如下
 1.网络socket编程(进行中）、集合、IO、多线程 —》netty  NIO|AIO
 
 2.Spring 、SpringMVC、SpringBoot、SpringCloud
