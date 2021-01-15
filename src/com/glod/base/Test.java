@@ -9,7 +9,7 @@ public class Test {
     public  void bitOperation(){
         System.out.println(20 * 16 == 20 << 4);
         System.out.println(20 << 4); // equals 20 乘 16（2的4次方）
-        System.out.println();
+        System.out.println(2 << 24); // 33554432
     }
 
     @org.junit.Test
