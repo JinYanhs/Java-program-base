@@ -18,4 +18,4 @@ Note my Java networkProgramming
 
 5.脚本语言Shell
 
-6.kafka、nigix
+6.kafka、nginx
