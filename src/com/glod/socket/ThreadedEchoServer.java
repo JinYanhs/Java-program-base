@@ -1,9 +1,8 @@
 package com.glod.socket;
 
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
-import java.io.PrintWriter;
+import sun.nio.cs.ext.GBK;
+
+import java.io.*;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.Scanner;
@@ -65,7 +64,9 @@ class ThreadedEchoHandler implements Runnable{
         }
         while(!done && in.hasNextLine()){
             String line = in.nextLine();
-            pw.println("ECHO:" + line);
+
+                pw.println("ECHO:" + line);
+
 
         }
         try {

@@ -1,8 +1,7 @@
-package com.glod.thread;
+package com.glod.thread.consumerAndProducer;
 
 
 import org.junit.jupiter.api.Test;
-import sun.applet.Main;
 
 /**
  *  Date: 2020-12-20

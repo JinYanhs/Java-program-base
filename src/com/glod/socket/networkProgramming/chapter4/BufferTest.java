@@ -2,6 +2,8 @@ package com.glod.socket.networkProgramming.chapter4;
 
 import org.junit.Test;
 
+import java.nio.ByteBuffer;
+import java.nio.CharBuffer;
 import java.nio.IntBuffer;
 
 /**
@@ -44,6 +46,8 @@ public class BufferTest {
         System.out.println(intBuffer);
         System.out.println(intBuffer.get()); // 相对读，此时position的位置等于limit的位置，java.nio.BufferUnderflowException
         System.out.println(intBuffer.get(1)); //绝对读
+
+
     }
 
 }

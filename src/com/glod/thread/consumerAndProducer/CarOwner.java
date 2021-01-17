@@ -1,4 +1,4 @@
-package com.glod.thread;
+package com.glod.thread.consumerAndProducer;
 
 /**
  * 消费者
