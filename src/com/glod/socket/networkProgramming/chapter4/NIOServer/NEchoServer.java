@@ -17,11 +17,13 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 /**
- * @description: 非阻塞下的EchoServer
+ * @description: 非阻塞下的EchoServer。ServerSocketChannel和SocketChannel都被设置为非阻塞模式，
+ *               这使得接收连接、接收数据和发送数据的操作都采用非阻塞模式并且采用一个线程同时完成。
  * @author: Glod
  * @date: 2021/1/17
  */
 public class NEchoServer {
+
     /**
      * 非阻塞模式下，EchoServer只需要启动一个主线程，可同时处理三件事
      * <p>
