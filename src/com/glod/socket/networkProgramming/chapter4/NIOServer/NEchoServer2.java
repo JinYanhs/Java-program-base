@@ -72,7 +72,10 @@ public class NEchoServer2 {
 
     public void service()throws IOException{
         for (;;){
-            synchronized (gate){
+            // 主线程被唤醒后,为了保证Acceptor线程先执行完socketChannel.register()方法，再让主线程执行selector.select()方法，主线程
+            // 必须先获得gate对象的同步锁
+            // 为了让主线程等待Acceptor线程执行完同步代码块
+            synchronized (gate){}
 
                 // select 查询已经发生的事件，然后做出相应的响应
                 int n = selector.select();
@@ -110,7 +113,7 @@ public class NEchoServer2 {
                 }
             }
         }
-    }
+
 
     /**
      *  发送数据
