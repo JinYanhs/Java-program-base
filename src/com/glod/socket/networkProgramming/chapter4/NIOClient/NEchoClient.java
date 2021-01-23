@@ -34,7 +34,7 @@ public class NEchoClient {
         socketChannel = SocketChannel.open();
         InetAddress ia = InetAddress.getLocalHost();
         InetSocketAddress isa = new InetSocketAddress(ia,port);
-        socketChannel.connect(isa);
+        socketChannel.connect(isa); // 该方法是阻塞式的，只有成功建立连接才会返回
         // 设置为非阻塞模式
         socketChannel.configureBlocking(false);
         System.out.println("与服务器的连接建立成功");
@@ -45,7 +45,7 @@ public class NEchoClient {
     /**
      * 接收从控制台输入的数据，将之放到sendBuffer中
      */
-    public void receiveFromUser() throws IOException {
+    public void receiveFromUser(){
         try {
             BufferedReader localReader = new BufferedReader(
                     new InputStreamReader(System.in)
@@ -103,6 +103,7 @@ public class NEchoClient {
     private void send(SelectionKey key) throws IOException {
         // 发送sendBuffer中的数据
         SocketChannel socketChannel = (SocketChannel)key.channel();
+        // 避免receiver线程和主线程同时操纵sendBuffer，避免对资源的竞争，对操纵sendBuffer的资源加锁
         synchronized (sendBuffer){
             sendBuffer.flip();
             // 发送数据
@@ -155,12 +156,10 @@ public class NEchoClient {
     public static void main(String[] args) throws IOException {
         final NEchoClient client = new NEchoClient();
         Thread receiver = new Thread(()->{ // reciver线程
-            try {
+
                 // 接收用户向控制台输入的数据
                 client.receiveFromUser();
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
+
         });
 
         receiver.start(); //启动Receiver线程
