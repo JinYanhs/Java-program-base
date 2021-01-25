@@ -7,7 +7,9 @@ package com.glod.annotationAndReflection;
  */
 public class LearnClassLoader {
     /**
-     *  JVM参数固定格式：-XX:+<option>开启某个虚拟机参数
+     *  JVM参数固定格式：-XX:+<option>开启某个虚拟机参数 -<option>关闭某个虚拟机参数
+     *  +号表示开启这个虚拟机参数
+     *
      *  类加载轨迹参数：-XX:+TraceClassLoading
      *
      *  七种类的主动使用方式
