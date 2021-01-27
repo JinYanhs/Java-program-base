@@ -6,7 +6,7 @@ package com.glod.thread.chapter1;
  * @author: Glod
  * @date: 2021/1/25
  */
-public class WaitNotifyInterupt {
+public class WaitNotifyInterrupt {
     static Object obj = new Object();
     public static void main(String[] args) throws InterruptedException {
         // 创建线程

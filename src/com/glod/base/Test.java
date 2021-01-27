@@ -10,6 +10,22 @@ public class Test {
         System.out.println(20 * 16 == 20 << 4);
         System.out.println(20 << 4); // equals 20 乘 16（2的4次方）
         System.out.println(2 << 24); // 33554432
+
+        System.out.println("10 % 5 =" + 10 % 5);
+        boolean res = 10 % 5 == 0;
+        System.out.println("10 % 5 =                                                                                                                                                                                                                                                                                                                                                                                      -= 0 :" + res);
+
+        int zeroModFive = 0 % 5;
+        System.out.println("0 % 5 =" + zeroModFive);
+
+        //java.lang.ArithmeticException: / by zero
+        //int fiveModZero = 5 % 0;
+        //System.out.println("5 % 0 =" + fiveModZero);
+
+
+        System.out.println(32345 ^ 5);
+        System.out.println((32345 ^ 9) % 10);
+
     }
 
     @org.junit.Test

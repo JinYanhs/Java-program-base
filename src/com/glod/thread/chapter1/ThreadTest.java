@@ -47,7 +47,8 @@ public class ThreadTest {
         // 继承Thread创建线程
         MyThread thread = new MyThread();
         // 启动线程
-        thread.start(); //启动线程 ->1.就绪状态（获取了出了CPU资源外的其他资源）
+        thread.start(); //启动线程 ->1.就绪状态（获取了除了CPU资源外的其他资源）
+                // -----------------------CPU调度----------------------
                         //          2.运行状态（获取了CPU的执行权）
         // thread.start(); // 线程启动两次 java.lang.IllegalThreadStateException
 

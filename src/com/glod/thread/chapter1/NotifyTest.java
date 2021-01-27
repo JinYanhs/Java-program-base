@@ -6,7 +6,7 @@ package com.glod.thread.chapter1;
  * @author: Glod
  * @date: 2021/1/25
  */
-public class notifyTest {
+public class NotifyTest {
     // 创建资源
     private static volatile Object resourceA = new Object();
 

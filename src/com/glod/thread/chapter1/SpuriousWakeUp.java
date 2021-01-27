@@ -65,7 +65,7 @@ public class SpuriousWakeUp {
            System.out.println("\n------------消费--------------");
                queue.poll();
                System.out.println(Thread.currentThread()
-                       + "吃了了一枚鸡蛋，当前共有" + queue.size()
+                       + "取了了一枚鸡蛋，当前共有" + queue.size()
                        + "枚鸡蛋");
                queue.notifyAll();
 
