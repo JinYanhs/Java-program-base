@@ -37,6 +37,8 @@ public class DeadLockTest {
                         System.out.println(Thread.currentThread() + "get resourceB");
                     }
                 }
+
+                System.out.println(Thread.currentThread() + "release resourceB");
             }
         });
 
@@ -58,11 +60,16 @@ public class DeadLockTest {
                         System.out.println(Thread.currentThread() + "get resourceA");
                     }
                 }
+                System.out.println(Thread.currentThread() + "release resourceA");
             }
         });
 
         // 启动
         threadA.start();
         threadB.start();
+
+        /**
+         *  资源的有序性可以破坏资源的请求并持有和环路等待条件，从而避免死锁
+         */
     }
 }
