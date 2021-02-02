@@ -22,6 +22,27 @@ public class Test {
         //int fiveModZero = 5 % 0;
         //System.out.println("5 % 0 =" + fiveModZero);
 
+        // 异常 XOR exclusive OR
+        System.out.println("-----------------异或[begin]----------------------");
+        System.out.println("任何数和零异或 : " + (7 ^ 0)); // 任何一个数与自身异或等于本身
+        System.out.println("一个值与自身异或 ：" + (6 ^ 6)); // 0
+        boolean resXOR = (8 ^ 3) == (3 ^ 8);
+        System.out.println("对称性 ： " + resXOR );
+        // 结合性 x ^ (y ^ z) = (x ^ y) ^ z
+        boolean resXOR2 = (2 ^ (3 ^ 5)) == ((2 ^ 3) ^ 5);
+        System.out.println("结合性 ： " + resXOR2);
+
+        /**
+         *  原理
+         *
+         *  (x ^ y) ^ y
+         *   = x ^ (y ^ y)
+         *   = x ^ 0
+         *   = x
+         *
+         *   应用
+         */
+
 
         System.out.println(32345 ^ 5);
         System.out.println((32345 ^ 9) % 10);
