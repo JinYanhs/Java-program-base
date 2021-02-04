@@ -9,7 +9,7 @@ public class QuickSort {
 	public static void main(String[] args) {
 		  int a[] = new int[50];
           for(int i = 0 ; i<50 ;i++){
-        	  a[i] =(int) (Math.random()*100); //����Math.random()*100���� �����Ż� ���ȫΪ0    Math.random()���Ϊ0��1 ������1��
+        	  a[i] =(int) (Math.random()*100); 
           }
 		  
 		  System.out.println("排序前");
