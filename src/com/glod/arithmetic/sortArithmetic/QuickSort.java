@@ -1,16 +1,17 @@
 package com.glod.arithmetic.sortArithmetic;
 
 /**
- * @description: 快排
+ * @description: 快排 nlogn
  * @author: Glod
  * @date: 2021/2/4
  */
 public class QuickSort {
 	public static void main(String[] args) {
-		  int a[] = new int[50];
-          for(int i = 0 ; i<50 ;i++){
-        	  a[i] =(int) (Math.random()*100); //����Math.random()*100���� �����Ż� ���ȫΪ0    Math.random()���Ϊ0��1 ������1��
-          }
+		  int a[] = SortUtil.generateArray(100000,100000);
+				  //new int[50];
+//          for(int i = 0 ; i<50 ;i++){
+//        	  a[i] =(int) (Math.random()*100);
+//          }
 		  
 		  System.out.println("排序前");
 		  for (int n = 0; n < a.length; n++) {
@@ -26,15 +27,15 @@ public class QuickSort {
 		  }
 		 }
 
-		 public void quickSort(int[] a, int low, int high) {
+		 private void quickSort(int[] a, int low, int high) {
 		  int pivot = position(a,low,high); // 基准
-		  if(pivot>low+1)
+		  if(pivot > low+1)
 		   quickSort(a,low,pivot-1);
 		  if(pivot < high-1)
 		   quickSort(a,pivot+1,high);  
 		 }
 
-		 public int position(int[] a, int low, int high) {
+		 private int position(int[] a, int low, int high) {
 		  while (low < high) {
 		   while (low < high && a[high] >= a[low]) {
 		    high--;
