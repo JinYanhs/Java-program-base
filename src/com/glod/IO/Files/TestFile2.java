@@ -13,7 +13,7 @@ import java.io.IOException;
 public class TestFile2 {
     public static void main(String[] args) {
         // 创建一个File对象指向一个文件
-        File file = new File("E:/Java/a/b/c/d/testFile/Java.txt");
+        File file = new File("E:/Java/testFile/Java.txt");
         // 如果文件存在就删除，不存在就创建
         if (file.exists()){
             file.delete();
