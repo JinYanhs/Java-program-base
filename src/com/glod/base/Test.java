@@ -24,7 +24,7 @@ public class Test {
 
         // 异常 XOR exclusive OR
         System.out.println("-----------------异或[begin]----------------------");
-        System.out.println("任何数和零异或 : " + (7 ^ 0)); // 任何一个数与自身异或等于本身
+        System.out.println("任何数和零异或 : " + (7 ^ 0)); // 任何一个数与零异或等于本身
         System.out.println("一个值与自身异或 ：" + (6 ^ 6)); // 0
         boolean resXOR = (8 ^ 3) == (3 ^ 8);
         System.out.println("对称性 ： " + resXOR );

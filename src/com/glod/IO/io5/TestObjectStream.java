@@ -1,5 +1,7 @@
 package com.glod.IO.io5;
 
+import com.glod.IO.Student;
+
 import java.io.*;
 import java.util.Date;
 
@@ -15,6 +17,8 @@ import java.util.Date;
  * @date: 2021/2/17
  */
 public class TestObjectStream {
+
+    private static Student student = new Student("张三",123,24);
     public static void main(String[] args) throws IOException, ClassNotFoundException {
        // write();
         read();
@@ -30,6 +34,7 @@ public class TestObjectStream {
         oos.writeDouble(3.14);
         oos.writeChar('A');
         oos.writeUTF("开啊开");
+        oos.writeObject(student);
 
         oos.writeObject(new Date());
         //关闭流
@@ -45,7 +50,7 @@ public class TestObjectStream {
         System.out.println(ois.readDouble());
         System.out.println(ois.readChar());
         System.out.println(ois.readUTF());
-
+        System.out.println(ois.readObject());
         Date date = (Date) ois.readObject();
         System.out.println(date.toLocaleString());
         //关闭流
