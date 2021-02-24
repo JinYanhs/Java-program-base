@@ -18,13 +18,14 @@ public class TestArrayList {
      *  数组中既可以放基本数据类型，也可以放引用数据类型，比如 int arr[] Student[] s
      *  集合中只能放引用类型数据类型，不能放基本类型数据，但可放包装类型数据
      *
-     *  泛型generic的目的:解决宽进严出
+     *  泛型generic的目的:解决宽进严出s
      *   目标：安全、简单
      *    严进宽出
      *
      *    索引 指针
      *
-     *    默认空，初始10，扩容50%（底层：长度可动态增长的Object数组)
+     *     ArrayList:（底层：长度可动态增长的Object数组)
+     *    默认空，初始10，扩容50%(底层：Arrays.copyOf(x,y))
      */
 
     public static void main(String[] args) {
@@ -79,7 +80,7 @@ public class TestArrayList {
        list.addAll(list2); // 加到list后
         //list.addAll(2,list2);
         //list.removeAll(list2); // 从list中去掉list2集合中的元素，两个集合共有的元素
-        //list.retainAll(list2); //(在list中删除list2中没有的元素） 在list中存在与list2共有的元素，可能会有重复的
+        //list.retainAll(list2); //(在list中删除list2中没有的元素/只保留list2中有的元素） 在list中存在与list2共有的元素，可能会有重复的
         System.out.println("list2: "  + list2);
         System.out.println("list: " + list);
 
