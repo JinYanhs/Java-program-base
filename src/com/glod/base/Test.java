@@ -1,6 +1,7 @@
 package com.glod.base;
 
 public class Test {
+    // 程序要严谨，优雅，易复用
 
     /**
      *  位运算
@@ -31,7 +32,12 @@ public class Test {
         // 结合性 x ^ (y ^ z) = (x ^ y) ^ z
         boolean resXOR2 = (2 ^ (3 ^ 5)) == ((2 ^ 3) ^ 5);
         System.out.println("结合性 ： " + resXOR2);
-
+        // 一个偶数^1,那么答案是偶数+1.如果是一个奇数^1,那么答案是奇数-1 8421(偶数末尾0，算得1；奇数末尾1，算得0)
+        System.out.println("2 ^ 1 = " + (2 ^ 1));
+        System.out.println("3 ^ 1 = " + (3 ^ 1));
+        System.out.println("4 ^ 1 = " + (4 ^ 1));
+        System.out.println("5 ^ 1 = " + (5 ^ 1));
+        System.out.println("6 ^ 1 = " + (6 ^ 1));
         /**
          *  原理
          *
