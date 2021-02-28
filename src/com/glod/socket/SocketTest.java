@@ -23,7 +23,7 @@ import java.util.Scanner;
 public class SocketTest  {
 
     /**
-     *   Function: socket 通信模拟TElnet命令访问远端服务器，获取返回一个美国的当日之时
+     *   Function: socket 通信模拟Telnet命令访问远端服务器，获取返回一个美国的当日之时
      */
     public static void main(String args[])throws Exception{
         /**

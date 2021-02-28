@@ -1,5 +1,9 @@
 package com.glod.base;
 
+import com.glod.collect.set.Student;
+
+import java.util.Objects;
+
 public class Test {
     // 程序要严谨，优雅，易复用
 
@@ -56,15 +60,29 @@ public class Test {
     }
 
     @org.junit.Test
+    public void compute(){
+        System.out.println(0.1 + 0.2);  //0.30000000000000004
+        System.out.println((int)98.5-98); // 0
+
+        Student student = new Student();
+        System.out.println(Objects.hash(student));
+
+        int num = 3;
+        System.out.println(Objects.hash(num));
+        System.out.println(Objects.hashCode(num));
+
+    }
+
+    @org.junit.Test
     public void swapNum(){
         // 异或换位
         int x = 1;
         int y = 2;
         System.out.println("交换前 ：x = " + x + " y = " + y);
 
-        x = x ^ y;
-        y = x ^ y;
-        x = x ^ y;
+        x ^= y;
+        y ^= x;
+        x ^= y;
         System.out.println("交换后 ：x = " + x + " y = " + y);
     }
 }
