@@ -1,8 +1,5 @@
 package com.glod.annotationAndReflection;
 
-import java.util.HashMap;
-import java.util.Stack;
-
 /**
  * @description: 类加载机制
  * @author: Glod
@@ -32,15 +29,6 @@ public class LearnClassLoader {
     }
 
     public static void main(String[] args) {
-//        String s = new String("111");
-//        char[] c =  s.toCharArray();
-//        s.lastIndexOf(s);
-//        s.indexOf(s);
-//        System.out.println(s.toCharArray());
-//        //Stack stack = new Stack();
-//        Stack<Character> stack = new Stack<Character>();
-//        HashMap<Character,Integer> ct = new HashMap<Character, Integer>();
-//        ct.getOrDefault("d");
         System.out.println("------------------main--------------");
         System.out.println(LearnClassLoader.a);
     }

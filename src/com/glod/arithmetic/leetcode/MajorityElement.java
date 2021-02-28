@@ -33,14 +33,11 @@ public class MajorityElement {
      */
 
     public static void main(String[] args) {
-        int[] nums = {4,2,2,2,4,3,2,2,3,2,3};
+        int[] nums = {3,2,3};
         System.out.println(majorityElement(nums));
     }
 
-    private static  int majorityElement(int[] nums){
-        if(nums.length == 0){
-            return -1;
-        }
+    public static  int majorityElement(int[] nums){
         long halfSize = nums.length / 2;
         Arrays.sort(nums);
         int xorNum = nums[0];
