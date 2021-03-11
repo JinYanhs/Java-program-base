@@ -14,7 +14,7 @@ public class TestSet {
      *  Set feature: 无序、唯一（不重复）
      *
      *  HashSet：采用Hashtable哈希表存储结构(散列表-》神奇的结构）
-      *     adv: 添加速度快，查询速度快，删除速度快 就是快
+      *     adv: 添加速度快，查询速度快，删除速度快
      *      disadvantage: 无序
      *
      *  LinkedHashSet
@@ -33,8 +33,8 @@ public class TestSet {
 
     public static void main(String[] args) {
 //        Set<String> set = new HashSet(); // 快 无序 唯一  哈希表
-//        Set<String> set = new LinkedHashSet(); // 快 有序（添加顺序） 唯一 哈希表 + 链表
-        Set<String> set = new TreeSet(); // 快 有序（自然顺序-》例子为字母大小顺序） 唯一  红黑树
+       Set<String> set = new LinkedHashSet(); // 快 有序（添加顺序） 唯一 哈希表 + 链表
+      //  Set<String> set = new TreeSet(); // 快 有序（自然顺序-》例子为字母大小顺序） 唯一  红黑树
 
 
         set.add("MySQL");

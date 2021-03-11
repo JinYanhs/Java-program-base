@@ -1,5 +1,5 @@
 # Java-program-base
-Note my Java networkProgramming
+Note my Java programming
 ---------------------------------------
 加强自己的Java基础、一些框架和中间件，
 不能让时间跑掉了，肝！
