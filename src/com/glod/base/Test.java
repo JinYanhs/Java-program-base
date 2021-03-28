@@ -79,7 +79,7 @@ public class Test {
         int x = 1;
         int y = 2;
         System.out.println("交换前 ：x = " + x + " y = " + y);
-
+        System.out.println(('A'+'B'+'V'+'C') >> 3);
         x ^= y;
         y ^= x;
         x ^= y;
