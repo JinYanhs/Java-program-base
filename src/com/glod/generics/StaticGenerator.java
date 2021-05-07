@@ -1,0 +1,26 @@
+package com.glod.generics;
+/**
+ * @Description 静态方法与泛型
+ *
+ * @Author glod
+ * @Date 2021/5/7
+ * @Modifier
+ * @Modified Date
+ * @Version 1.0
+ */
+public class StaticGenerator<T> {
+    /**
+     *  /**
+     *      * 如果在类中定义使用泛型的静态方法，需要添加额外的泛型声明（将这个方法定义成泛型方法）
+     *      * 即使静态方法要使用泛型类中已经声明过的泛型也不可以。
+     *      * 如：public static void show(T t){..},此时编译器会提示错误信息：
+     *           "StaticGenerator cannot be refrenced from static context"
+     *      */
+//    public static void show(T t){
+//        return;
+//    }
+
+    public static <T> void show(T t){
+        return;
+    }
+}
