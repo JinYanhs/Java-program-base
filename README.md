@@ -8,7 +8,7 @@ Note my Java programming
 包含Java基础（集合、多线程、IO、网络编程），而不限于这些。
 
 ## 计划如下
->1.集合、I/O（ing）、多线程、网络Socket编程、反射（代理）、注解 —> (NIO|AIO)Netty 
+>1.[集合](/src/com/glod/collect)、I/O、多线程、网络Socket编程、反射（代理）、注解 —> (NIO|AIO)Netty 
 
 >2.Spring 、SpringMVC、SpringBoot、SpringCloud
 
