@@ -1,7 +1,11 @@
 package com.glod.base;
 
 import com.glod.collect.set.Student;
+import com.sun.org.apache.bcel.internal.generic.LoadClass;
 
+import java.net.SocketTimeoutException;
+import java.net.URL;
+import java.util.ArrayList;
 import java.util.Objects;
 
 public class Test {
@@ -84,5 +88,36 @@ public class Test {
         y ^= x;
         x ^= y;
         System.out.println("交换后 ：x = " + x + " y = " + y);
+    }
+
+    @org.junit.Test
+    public void ClassLoaderTest(){
+        // AppClassLoader >> ExtClassLoader >>  BootStrapClassLoader
+        //System.out.println(ClassLoader.getSystemClassLoader());
+//        System.out.println(System.getProperty("java.class.path"));
+//        ClassLoader cl = Test.class.getClassLoader();
+//        System.out.println(cl);
+//        System.out.println(cl.getParent());
+//
+//        System.out.println(System.getProperty("java.ext.dirs"));
+
+        URL[] urls = sun.misc.Launcher.getBootstrapClassPath().getURLs();
+        for (int i = 0; i < urls.length; i++) {
+            System.out.println(urls[i].toExternalForm());
+        }
+
+        ClassLoader stringCL = ArrayList.class.getClassLoader();
+        System.out.println(stringCL);
+
+        //获取当前线程上下文类加载器
+        ClassLoader classLoader = Thread.currentThread().getContextClassLoader();
+        try {//设置当前线程上下文类加载器为targetTccl
+            System.out.println(classLoader);
+            //Thread.currentThread().setContextClassLoader(targetTccl);
+            //doSomething
+            //doSomething();
+        } finally {//设置当前线程上下文加载器为原始加载器
+            Thread.currentThread().setContextClassLoader(classLoader);
+        }
     }
 }
